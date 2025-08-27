@@ -1,3 +1,4 @@
+#Test comment
 var_1 = input ("Please enter your first number: ") #Takes data in as a string
 var_2 = input ("Please enter your second number: ") #Takes data in as a string
 # Addidng these two wont work because they are strings. You gotta make them into a float
@@ -18,4 +19,5 @@ quotient = var_1 / var_2
 print (f"{var_1} * {var_2} = {quotient}")
 
 the_power = var_1 ** var_2
+
 print(f"{var_1} ** {var_2} = {the_power}")
