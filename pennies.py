@@ -21,11 +21,11 @@ post_nickles = int (post_dimes // nickles)
 post_pennies = int (post_nickles // pennies)
 
 # The amount of money left after converting from specific currency
-dollar_penny_deposit = penny_deposit - post_dollar * 100 
-quarter_penny_deposit = dollar_penny_deposit - post_quarters * 25
-dime_penny_deposit = dollar_penny_deposit - post_dimes * 10
-nickle_penny_deposit = dime_penny_deposit - post_nickles * 5
-penny_penny_deposit = nickle_penny_deposit - post_pennies * 1
+dollar_penny_deposit = int (penny_deposit - post_dollar * 100)
+quarter_penny_deposit = int (dollar_penny_deposit - post_quarters * 25)
+dime_penny_deposit = int (dollar_penny_deposit - post_dimes * 10)
+nickle_penny_deposit = int (dime_penny_deposit - post_nickles * 5)
+penny_penny_deposit = int (nickle_penny_deposit - post_pennies * 1)
 
 print ("-------------------------------------------------")
 
@@ -33,8 +33,14 @@ def penny_conversion():
     if penny_deposit % dollar_bill == 0 :
         print (post_dollar) 
 
-    elif dollar_penny_deposit % quarters == 0 :
-        print ()
-
+    elif penny_deposit % dollar_bill != 0 :
+        print (post_dollar)
+        print (int(dollar_penny_deposit / quarters ))
+    
 penny_conversion()
+
+
+
+
+
 
