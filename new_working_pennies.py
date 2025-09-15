@@ -29,18 +29,10 @@ nickle_penny_deposit = int(dime_penny_deposit - post_nickles * nickles)
 post_pennies = int(nickle_penny_deposit // pennies)
 penny_penny_deposit = int(nickle_penny_deposit - post_pennies * pennies)
 
-# The amount of money left after converting from specific currency
-dollar_penny_deposit = int (penny_deposit - post_dollar * dollar_bill)
-quarter_penny_deposit = int (dollar_penny_deposit - post_quarters * quarters)
-dime_penny_deposit = int (dollar_penny_deposit - post_dimes * dimes)
-nickle_penny_deposit = int (dime_penny_deposit - post_nickles * nickles)
-penny_penny_deposit = int (nickle_penny_deposit - post_pennies * pennies)
-
-
 print ("-------------------------------------------------")
 
 def penny_conversion():
-
+    
     print(f"{post_dollar} Dollars")
     print(f"{post_quarters} Quarters")
     print(f"{post_dimes} Dimes")
@@ -49,7 +41,4 @@ def penny_conversion():
 
 penny_conversion()
 
-
-
-
-
+# turns out if statements are the spawn of the devil. Never needed them in the first place.
