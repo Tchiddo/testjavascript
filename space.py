@@ -3,7 +3,7 @@
 print ("---------------------------------------")
 print (" ")
 
-print ("welcome space cowpoke! Before we shoot you off to space, we need to know your current earth weight, and what planet you'll be sent to, so we can correctly idenify your weight on that planet!") 
+print ("Little Codey! We've heard so much about you! Please select your current weight, then, your planet your next fight is on so we can idenify your weight! ") 
 
 print (" ")
 
@@ -15,7 +15,7 @@ print ("     6. Neptune          7. Pluto    ")
 
 print (" ")
 
-print ("Of our six options, please select the nuumber of your planet so we can correctly idenify your weight! (ex: 0, 4, 6)")
+print ("Of our six options, please select the nuumber of your planet! (ex: 0, 4, 6)")
 
 planet = input ("Enter planet here: ")
 
