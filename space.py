@@ -15,7 +15,7 @@ print ("     6. Neptune          7. Pluto    ")
 
 print (" ")
 
-print ("Of our six options, please select the nuumber of your planet! (ex: 0, 4, 6)")
+print ("Of our seven options, please select the nuumber of your planet! (ex: 0, 4, 6)")
 
 planet = input ("Enter planet here: ")
 
@@ -48,3 +48,4 @@ elif planet == "7":
   print (f"Your weight on Pluto will be {weight * 0.063} ") 
 
   print (" ")
+
