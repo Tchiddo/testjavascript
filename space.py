@@ -19,33 +19,29 @@ print ("Of our seven options, please select the nuumber of your planet! (ex: 0, 
 
 planet = input ("Enter planet here: ")
 
+
+planets = {
+    "0": {"name": "Mercury", "factor": 0.90},
+    "1": {"name": "Venus", "factor": 0.91},
+    "2": {"name": "Mars", "factor": 0.38},
+    "3": {"name": "Jupiter", "factor": 2.34},
+    "4": {"name": "Saturn", "factor": 1.06},
+    "5": {"name": "Uranus", "factor": 0.92},
+    "6": {"name": "Neptune", "factor": 1.19},
+    "7": {"name": "Pluto", "factor": 0.063}
+}
+
+
 print (" ")
 print ("---------------------------------------")
+print(" ")
 
 
-if planet == "0":
-  print (f"Your weight on Mercury will be {weight * 0.90} ")
+if planet in planets:
+    planet_info = planets[planet]
+    new_weight = weight * planet_info["factor"]
+    print(f"Your weight on {planet_info['name']} will be {new_weight:.2f}")
 
-elif planet == "1":
-  print (f"Your weight on Venus will be {weight * 0.91} ")
-
-elif planet == "2":
-  print (f"Your weight on Mars will be {weight * 0.38} ")
-
-elif planet == "3":
-  print (f"Your weight on Jupiter will be {weight * 2.34} ") 
-
-elif planet == "4":
-  print (f"Your weight on Saturn will be {weight * 1.06} ") 
-
-elif planet == "5":
-  print (f"Your weight on Uranus will be {weight * 0.92} ")
-
-elif planet == "6":
-  print (f"Your weight on Neptune will be {weight * 1.19} ") 
-
-elif planet == "7":
-  print (f"Your weight on Pluto will be {weight * 0.063} ") 
-
-  print (" ")
-
+else:
+    print("Sorry, that's not a valid planet number!")
+print(" ")
