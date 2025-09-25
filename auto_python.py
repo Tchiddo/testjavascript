@@ -19,28 +19,13 @@ print ("Move the mouse to top left, or press Ctrl+C to abort")
 #     print ("\nDone")
 #-------------------------------------------------------------------------
 
-def send_email():
-
-    pg.moveTo(2269, 60)
-    pg.click()
-    pg.write("https://www.gmail.com")
-    pg.press("enter")
-    pg.moveTo(2071, 219)
-    pg.sleep(2)
-    pg.click()
-    pg.sleep(1)
-    pg.write("michael.sekol@mahoningctc.com")
-    pg.press("enter")
-    pg.moveTo(3261, 540)
-    pg.click()
-    pg.write("Hello Nerds")
-    pg.moveTo(3334, 736)
-    pg.click()
-    pg.write("Welcome to Software Engineering")
-    pg.moveTo(3217, 994)
-    pg.click()
-
-send_email()
+def cookie():
+  pg.moveTo (1288, 1166)
+  pg.click()
+  pg.moveTo (275, 528)
+  pg.click()
+  pg.sleep(0.05)
+cookie()
 
 
 
