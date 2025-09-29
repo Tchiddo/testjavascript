@@ -1,5 +1,7 @@
 # Every comment written was written by me to show that I know whats going on.
 
+# Before runnig, ensure that googletrans   and   Translator    bave been pip installed 
+
 import keyboard   # Captures in real time instead of waiting for user to press enter.
 import time       # Will be used to both check when the user last typed, and to pause a little bit so the PC doesn't lag a bunch.
 import sys
