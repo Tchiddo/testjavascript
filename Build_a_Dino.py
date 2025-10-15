@@ -9,12 +9,12 @@ class Dinosaur:
     def __init__(self, name, species, diet, age):
         self.name = name
         self.species = species
-        self.diet = diet
-        self.age = age
+        self.diet = []
+        self.age = int(age)
 
-dino1 = Dinosaur("Triceratops", 30 )
-dino2 = Dinosaur("Velociraptor", 10)
-dino3 = Dinosaur("Stegosaurus", 17)
+dino1 = Dinosaur("Triceratops", ["fruits", "seeds", "leaves", "twigs", "roots"], 30)
+dino2 = Dinosaur("Velociraptor" ["lizards", "dino eggs", "a baby dino"], 10)
+dino3 = Dinosaur("Stegosaurus", ["mosses", "ferns", "horsetails", "cycads"], 17)
 # roar = input("\nWould you like to roar? y/n ").strip()
 
 # if roar == "y":
