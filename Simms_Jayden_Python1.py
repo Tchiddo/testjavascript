@@ -63,3 +63,14 @@ print(f"Price: ${user_laptop.get_price()}")
 print(
     f"Discounted Price (15% off): ${user_laptop.calculate_discount_price(15):.2f}"
 )  # .2f in case it would come out as a hideous decimal
+input("Press Enter: \n")
+
+# Okay coool. Now we screw with the txt
+print("\n--LOG FILE--")
+
+try:
+    with open("store_sales.txt", "r") as file:
+        content = file.read()
+    print(content)
+except FileNotFoundError:
+    print ("File not found!")
